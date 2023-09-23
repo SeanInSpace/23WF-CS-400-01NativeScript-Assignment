@@ -1,0 +1,20 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+
+  <ActionBar title="My App" icon="" />
+
+  <StackLayout class="p-4">
+
+      <Switch checked="{{ isSliderEnabled }}" loaded="onSwitchLoaded" />
+      <Slider 
+      enabled="{{ isSliderEnabled }}"
+      value="{{ sliderValue }}" 
+      valueChange="onSliderChanged"
+      minValue="0"
+      maxValue="100"
+      loaded="onSliderLoaded"
+        />
+      <Image src="https://consequence.net/wp-content/uploads/2021/07/rick-astley.jpg?resize=300" stretch="aspectFill" />
+      
+  </StackLayout>
+
+</Page>
